@@ -1,0 +1,14 @@
+{
+    "name": "algorithms",
+    "version": "1.0.0",
+    "description": "",
+    "dependencies": {},
+    "devDependencies": {
+        "jest": "26.4.2",
+        "prettier": "2.1.2"
+    },
+    "scripts": {
+        "test": "jest --watchAll --verbose"
+    },
+    "license": "ISC"
+}
