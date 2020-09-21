@@ -5,9 +5,12 @@
 ## 스터디 규칙
 
 -   문제를 풀기 전 `branch`를 이동합니다.
--   문제 출처 별로 분류하여 `problems` 디렉토리에 폴더를 생성합니다. ex) `problems/programmers`
--   문제 번호 별로 분류하여 문제 출처 별 디렉토리에 폴더를 생성합니다. ex) `problems/programmers/42576-an-uncompleted-player`
--   유저 이름으로 문제 풀이 코드를 작성합니다. ex) `younho9.js`, `agrajak.py`
+-   문제 출처 별로 분류하여 `problems` 디렉토리에 폴더를 생성합니다.
+    -   ex) `problems/programmers`
+-   문제 번호 별로 분류하여 문제 출처 별 디렉토리에 폴더를 생성합니다.
+    -   ex) `problems/programmers/42576-an-uncompleted-player`
+-   유저 이름으로 문제 풀이 코드를 작성합니다.
+    -   ex) `younho9.js`, `agrajak.py`
 -   문제 풀이를 완료하면 [PR 템플릿](https://github.com/five-per-week/algorithms/blob/master/.github/PULL_REQUEST_TEMPLATE.md)에 따라 `Pull Request`합니다.
 -   `Assigner`에 자신을 등록하고, `Reviewer`에는 다른 스터디원들을 등록합니다.
 -   스터디원은 다른 스터디원의 `Pull Request`에 대해 리뷰하거나 간단한 코멘트를 작성할 수 있습니다.
@@ -29,12 +32,14 @@
 
 > 문제 풀이에 대해서는 다음과 같이 작성합니다.
 
--   문제 풀이 : `username/problem-reference/problem-number` ex) `younho9/programmers/42576`
+-   문제 풀이 : `username/problem-reference/problem-number`
+    -   ex) `younho9/programmers/42576`
 
 ## Git 커밋 메시지
 
 -   `커밋 타입: 커밋에 대한 설명`으로 메시지를 남깁니다.
--   문제 풀이에 대한 커밋 메시지 끝에는 유저 이름을 태그합니다. ex) `✅ solved: Programmers 42576 @younho9`
+-   문제 풀이에 대한 커밋 메시지 끝에는 유저 이름을 태그합니다.
+    -   ex) `✅ solved: Programmers 42576 @younho9`
 
 ### 가능한 타입 명
 
