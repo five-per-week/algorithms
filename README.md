@@ -9,6 +9,7 @@
 -   문제 번호 별로 분류하여 문제 출처 별 디렉토리에 폴더를 생성합니다. ex) `problems/programmers/42576-an-uncompleted-player`
 -   유저 이름으로 문제 풀이 코드를 작성합니다. ex) `younho9.js`, `agrajak.py`
 -   문제 풀이를 완료하면 [PR 템플릿](https://github.com/five-per-week/algorithms/blob/master/.github/PULL_REQUEST_TEMPLATE.md)에 따라 `Pull Request`합니다.
+-   `Assigner`에 자신을 등록하고, `Reviewer`에는 다른 스터디원들을 등록합니다.
 -   스터디원은 다른 스터디원의 `Pull Request`에 대해 리뷰하거나 간단한 코멘트를 작성할 수 있습니다.
     -   1명 이상의 팀원이 승인해야 `Merge` 할 수 있습니다.
 -   승인된 `Pull Request`는 `Assigner`가 직접 `Squash and Merge` 하며 완료 후 브랜치를 삭제해야 합니다.
