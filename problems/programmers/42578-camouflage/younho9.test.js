@@ -1,6 +1,6 @@
 const solution = require('./younho9');
 
-describe('1번', () => {
+describe('42578-camouflage', () => {
     it('test 1', () => {
         const clothes = [
             ['yellow_hat', 'headgear'],
