@@ -58,40 +58,57 @@ function generateTable(prs) {
         LR
     );
 }
-async function generateSummary() {
+function generateSection(prs) {
+    return getUsersFromPullRequests(prs)
+        .map((user) => {
+            return (
+                LR +
+                `### <img src="${user.avatar_url}" height="17px" width="17px"> ${user.login}` +
+                LR +
+                generateTable(user.prs) +
+                LR
+            );
+        })
+        .join(LR);
+}
+function generateSummaryThisWeek(prs) {
     const weekOfYear = dayjs().week();
 
-    const pullRequestsThisWeek = (await fetchPullRequests())
-        .filter(hasAlgorithmLabel)
-        .filter((x) => dayjs(x.created_at).week() == weekOfYear);
-
-    const header = LR + `## 이번 주(${weekOfYear}주차) 요약` + LR;
-    return (
-        header +
-        getUsersFromPullRequests(pullRequestsThisWeek)
-            .map((user) => {
-                return (
-                    LR +
-                    `### <img src="${user.avatar_url}" height="17px" width="17px"> ${user.login}` +
-                    LR +
-                    generateTable(user.prs) +
-                    LR
-                );
-            })
-            .join(LR)
+    const pullRequestsThisWeek = prs.filter(
+        (x) => dayjs(x.created_at).week() == weekOfYear,
     );
+
+    const header =
+        LR +
+        `## 이번 주(${weekOfYear}주차) 요약` +
+        LR +
+        `[이전 요약들](https://github.com/five-per-week/algorithms/blob/master/LOG.md)` +
+        LR;
+
+    return header + generateSection(pullRequestsThisWeek);
+}
+
+function generateSummary(prs) {
+    // TODO: 주차 별로 정보 모으기
+    const header = LR + '## 모든 정보 요약 ##' + LR;
+    return header + generateSection(prs);
 }
 
 initDayJS();
 (async function () {
     const readme = fs.readFileSync('./README.md', 'utf8');
-    const summary = await generateSummary();
+    const pullRequests = (await fetchPullRequests()).filter(hasAlgorithmLabel);
+
+    const summaryThisWeek = generateSummaryThisWeek(pullRequests);
+    const summary = generateSummary(pullRequests);
     const getCommentRegex = /(^[\s\S]*Start -->)([\S\s]*)(<!--[\s\S]*$)/;
 
     fs.writeFileSync(
         './README.md',
         readme.replace(getCommentRegex, (match, start, comment, end) =>
-            [start, summary, end].join(''),
+            [start, summaryThisWeek, end].join(''),
         ),
     );
+
+    fs.writeFileSync('./LOG.md', summary);
 })();
