@@ -9,7 +9,8 @@
         "prettier": "2.1.2"
     },
     "scripts": {
-        "test": "jest --watchAll --verbose"
+        "test": "jest --watchAll --verbose",
+        "create": "create-ps-directory"
     },
     "license": "ISC"
 }
