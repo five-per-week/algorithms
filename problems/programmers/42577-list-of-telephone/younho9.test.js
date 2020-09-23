@@ -1,6 +1,6 @@
 const solution = require('./younho9');
 
-describe('1번', () => {
+describe('42577-list-of-telephone', () => {
     it('test 1', () => {
         const phone_book = ['119', '97674223', '1195524421'];
         const result = false;
