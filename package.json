@@ -2,7 +2,10 @@
     "name": "algorithms",
     "version": "1.0.0",
     "description": "",
-    "dependencies": {},
+    "dependencies": {
+        "axios": "^0.20.0",
+        "dayjs": "^1.8.36"
+    },
     "devDependencies": {
         "create-ps-directory": "1.0.3",
         "jest": "26.4.2",
