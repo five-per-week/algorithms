@@ -19,7 +19,7 @@ jobs:
 
       - name: Install Node.js Dependencies
         run: |
-          npm install
+          npm ci
 
       - name: Update README.md and LOG.md
         run: |
