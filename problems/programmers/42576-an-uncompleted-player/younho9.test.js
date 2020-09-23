@@ -1,6 +1,6 @@
 const solution = require('./younho9');
 
-describe('1번', () => {
+describe('42576-an-uncompleted-player', () => {
     it('test 1', () => {
         const participant = ['leo', 'kiki', 'eden'];
         const completion = ['eden', 'kiki'];
