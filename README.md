@@ -39,6 +39,7 @@
 -   리팩토링 : `refactor/summary`
 -   환경 설정 : `env/summary`
 -   버그 수정 : `fix/summary`
+-   기타 : `chore/summary`
 -   기타 필요에 따라 제안할 수 있습니다.
 
 ### 문제 풀이
