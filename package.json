@@ -13,7 +13,8 @@
     },
     "scripts": {
         "test": "jest --watchAll --verbose",
-        "create": "create-ps-directory"
+        "create": "create-ps-directory",
+        "update-docs": "node generate-docs.js"
     },
     "license": "ISC"
 }

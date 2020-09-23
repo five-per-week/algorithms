@@ -23,9 +23,10 @@ jobs:
 
       - name: Update README.md and LOG.md
         run: |
-          node generate-docs.js
+          npm run update-docs
 
       - name: Git auto commit action
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: 'docs: Update summary in README.md and LOG.md (auto)'
+          push_options: --force
