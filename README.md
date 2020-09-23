@@ -19,7 +19,7 @@
 |  Programmers 42579  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/13) |
 |  Programmers 42578  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/10) |
 |  Programmers 42577  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/9) |
-|  Solved programmers-42576 | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/6) |
+|  Programmers 42576  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/6) |
 
 <!-- Summary End -->
 
