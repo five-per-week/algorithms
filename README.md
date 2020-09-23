@@ -2,6 +2,27 @@
 
 > 👨‍💻 일주일에 최소 5개의 알고리즘 문제를 푸는 스터디
 
+<!-- Summary Start -->
+## 이번 주(39주차) 요약
+
+### <img src="https://avatars2.githubusercontent.com/u/16265376?v=4" height="17px" width="17px"> agrajak
+| 문제이름 | 해결 여부 | 링크 | 
+| :-------: | :-------: | :------: |
+|  Programmers 42579  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/15) |
+|  Programmers 42577  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/14) |
+
+
+
+### <img src="https://avatars2.githubusercontent.com/u/48426991?v=4" height="17px" width="17px"> younho9
+| 문제이름 | 해결 여부 | 링크 | 
+| :-------: | :-------: | :------: |
+|  Programmers 42579  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/13) |
+|  Programmers 42578  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/10) |
+|  Programmers 42577  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/9) |
+|  Solved programmers-42576 | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/6) |
+
+<!-- Summary End -->
+
 ## 스터디 규칙
 
 -   문제를 풀기 전 `branch`를 이동합니다.

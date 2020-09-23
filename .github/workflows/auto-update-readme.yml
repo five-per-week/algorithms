@@ -1,0 +1,31 @@
+name: Update README.md for summary pull requests on this week.
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+
+      - name: Install Node.js Dependencies
+        run: |
+          npm ci
+
+      - name: Update README.md and LOG.md
+        run: |
+          node generate-docs.js
+
+      - name: Git auto commit action
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: 'docs: Update summary in README.md and LOG.md (auto)'
