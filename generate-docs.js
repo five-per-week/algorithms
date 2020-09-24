@@ -22,55 +22,73 @@ function hasAlgorithmLabel(pr) {
         return false;
     });
 }
-function getUsersFromPullRequests(prs) {
+
+function minimizePullRequest(pr) {
+    const isSolved = pr.title.indexOf('✅') != -1 ? '✅' : '❌';
+    const [_, site, title] = pr.title.match(/: (\S*) (.*)[@\s]/);
+    const url = pr.html_url;
+    return { isSolved, title, url, site };
+}
+
+function groupByUsers(prs) {
     return Object.values(
         prs.reduce((acc, pr) => {
             const id = pr.user.login;
             if (!(id in acc)) {
                 acc[id] = Object.assign(pr.user, { prs: [] });
             }
-            acc[id].prs.push(pr);
+            // 전체 풀 리퀘스트 정보에서 필요한 정보만 저장한다.
+            acc[id].prs.push(minimizePullRequest(pr));
 
             return acc;
         }, new Map()),
     );
 }
+
 async function fetchPullRequests() {
     const { data } = await axios.get(
         'https://api.github.com/repos/five-per-week/algorithms/pulls?state=closed',
     );
     return data;
 }
-function generatePullRequestRow(pr) {
-    const isSolved = pr.title.indexOf('✅') != -1 ? '✅' : '❌';
-    const title = pr.title.match(/:(.*)[@\s]/)[1];
-    const url = pr.html_url;
-    return `| ${title} | ${isSolved} | [바로가기](${url}) |`;
+
+function generateRow(columns) {
+    return `| ${columns.join(' | ')} |` + LR;
 }
 
-function generateTable(prs) {
-    const tRow = '| :-------: | :-------: | :------: |' + LR;
+function generateTable(headers, rows) {
+    if (rows.length == 0 || headers.length != rows[0].length) return '';
     return (
-        '| 문제이름 | 해결 여부 | 링크 | ' +
-        LR +
-        tRow +
-        prs.map(generatePullRequestRow).join(LR) +
+        generateRow(headers) +
+        generateRow(new Array(headers.length).fill(':---:')) +
+        rows.map(generateRow).join('') +
         LR
     );
 }
+
 function generateSection(prs) {
-    return getUsersFromPullRequests(prs)
+    return groupByUsers(prs)
         .map((user) => {
             return (
                 LR +
                 `### <img src="${user.avatar_url}" height="17px" width="17px"> ${user.login}` +
                 LR +
-                generateTable(user.prs) +
-                LR
+                generateTable(
+                    ['출처', '문제 이름', '해결 여부', '바로가기'],
+                    user.prs.map((pr) => {
+                        return [
+                            pr.site,
+                            pr.title,
+                            pr.isSolved,
+                            `[바로가기](${pr.url})`,
+                        ];
+                    }),
+                )
             );
         })
         .join(LR);
 }
+
 function generateSummaryThisWeek(prs) {
     const weekOfYear = dayjs().week();
 
@@ -81,6 +99,8 @@ function generateSummaryThisWeek(prs) {
     const header =
         LR +
         `## 이번 주(${weekOfYear}주차) 요약` +
+        LR +
+        `> 이 요약은 자동으로 생성됩니다.` +
         LR +
         `[이전 요약들](https://github.com/five-per-week/algorithms/blob/master/LOG.md)` +
         LR;
@@ -101,11 +121,11 @@ initDayJS();
 
     const summaryThisWeek = generateSummaryThisWeek(pullRequests);
     const summary = generateSummary(pullRequests);
-    const getCommentRegex = /(^[\s\S]*Start -->)([\S\s]*)(<!--[\s\S]*$)/;
+    const findCommentRegex = /(^[\s\S]*Start -->)([\S\s]*)(<!--[\s\S]*$)/;
 
     fs.writeFileSync(
         './README.md',
-        readme.replace(getCommentRegex, (match, start, comment, end) =>
+        readme.replace(findCommentRegex, (match, start, comment, end) =>
             [start, summaryThisWeek, end].join(''),
         ),
     );
