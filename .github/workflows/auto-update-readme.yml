@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.PAT }}
 
       - name: Set up Node 12.x
         uses: actions/setup-node@v1
@@ -23,9 +25,10 @@ jobs:
 
       - name: Update README.md and LOG.md
         run: |
-          node generate-docs.js
+          npm run update-docs
 
       - name: Git auto commit action
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: 'docs: Update summary in README.md and LOG.md (auto)'
+          push_options: --force
