@@ -4,10 +4,12 @@
 
 <!-- Summary Start -->
 ## 이번 주(39주차) 요약
+[이전 요약들](https://github.com/five-per-week/algorithms/blob/master/LOG.md)
 
 ### <img src="https://avatars2.githubusercontent.com/u/16265376?v=4" height="17px" width="17px"> agrajak
 | 문제이름 | 해결 여부 | 링크 | 
 | :-------: | :-------: | :------: |
+|  Leetcode Best Time to Buy and Sell Stock  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/18) |
 |  Programmers 42579  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/15) |
 |  Programmers 42577  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/14) |
 
