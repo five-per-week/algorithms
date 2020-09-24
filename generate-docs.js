@@ -25,9 +25,9 @@ function hasAlgorithmLabel(pr) {
 
 function minimizePullRequest(pr) {
     const isSolved = pr.title.indexOf('✅') != -1 ? '✅' : '❌';
-    const title = pr.title.match(/:(.*)[@\s]/)[1];
+    const [_, site, title] = pr.title.match(/: (\S*) (.*)[@\s]/);
     const url = pr.html_url;
-    return { isSolved, title, url };
+    return { isSolved, title, url, site };
 }
 
 function groupByUsers(prs) {
@@ -74,9 +74,14 @@ function generateSection(prs) {
                 `### <img src="${user.avatar_url}" height="17px" width="17px"> ${user.login}` +
                 LR +
                 generateTable(
-                    ['문제 이름', '해결 여부', '바로가기'],
+                    ['출처', '문제 이름', '해결 여부', '바로가기'],
                     user.prs.map((pr) => {
-                        return [pr.title, pr.isSolved, `[바로가기](${pr.url})`];
+                        return [
+                            pr.site,
+                            pr.title,
+                            pr.isSolved,
+                            `[바로가기](${pr.url})`,
+                        ];
                     }),
                 )
             );
@@ -94,6 +99,8 @@ function generateSummaryThisWeek(prs) {
     const header =
         LR +
         `## 이번 주(${weekOfYear}주차) 요약` +
+        LR +
+        `> 이 요약은 자동으로 생성됩니다.` +
         LR +
         `[이전 요약들](https://github.com/five-per-week/algorithms/blob/master/LOG.md)` +
         LR;
