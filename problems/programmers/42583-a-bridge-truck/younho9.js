@@ -4,7 +4,7 @@ function solution(birdge_length, weight, truck_weights) {
     let onBridgeWeight = 0;
     let time = 0;
 
-    let i = 0;
+    let waitingTruckIndex = 0;
     while (overBridge.length !== truck_weights.length) {
         const truck = onBridge[time];
         time++;
@@ -14,14 +14,17 @@ function solution(birdge_length, weight, truck_weights) {
             onBridgeWeight -= truck;
         }
 
-        if (onBridgeWeight + truck_weights[i] > weight || i >= truck_weights) {
+        if (
+            onBridgeWeight + truck_weights[waitingTruckIndex] > weight ||
+            waitingTruckIndex >= truck_weights.length
+        ) {
             onBridge[time + birdge_length - 1] = null;
             continue;
         }
 
-        onBridge[time + birdge_length - 1] = truck_weights[i];
-        onBridgeWeight += truck_weights[i];
-        i++;
+        onBridge[time + birdge_length - 1] = truck_weights[waitingTruckIndex];
+        onBridgeWeight += truck_weights[waitingTruckIndex];
+        waitingTruckIndex++;
     }
 
     return time;
