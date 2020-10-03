@@ -5,7 +5,7 @@ def solution(scoville, K):
     heapq.heapify(scoville)
     count = 0
 
-    while any(food < K for food in scoville):
+    while scoville[0] < K:
         if len(scoville) < 2:
             return -1
 
