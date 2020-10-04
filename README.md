@@ -3,14 +3,14 @@
 > 👨‍💻 일주일에 최소 5개의 알고리즘 문제를 푸는 스터디
 
 <!-- Summary Start -->
-## 이번 주(40주차) 요약
+## 이번 주(41주차) 요약
 > 이 요약은 자동으로 생성됩니다.
 [이전 요약들](https://github.com/five-per-week/algorithms/blob/master/LOG.md)
 
 ### <img src="https://avatars2.githubusercontent.com/u/48426991?v=4" height="17px" width="17px"> younho9
 | 출처 | 문제 이름 | 해결 여부 | 바로가기 |
 | :---: | :---: | :---: | :---: |
-| Programmers | 42583  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/28) |
+| Programmers | 42627  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/35) |
 
 <!-- Summary End -->
 
