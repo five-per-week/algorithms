@@ -23,6 +23,7 @@
 | :---: | :---: | :---: | :---: |
 | Leetcode | 83  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/31) |
 | Programmers | 42586  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/30) |
+| Leetcode | 13  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/26) |
 | Leetcode | 198  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/23) |
 | Leetcode | 121  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/18) |
 | Programmers | 42579  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/15) |
