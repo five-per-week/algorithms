@@ -21,6 +21,7 @@
 ### <img src="https://avatars2.githubusercontent.com/u/16265376?v=4" height="17px" width="17px"> agrajak
 | 출처 | 문제 이름 | 해결 여부 | 바로가기 |
 | :---: | :---: | :---: | :---: |
+| Leetcode | 110  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/33) |
 | Leetcode | 83  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/31) |
 | Programmers | 42586  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/30) |
 | Leetcode | 13  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/26) |
