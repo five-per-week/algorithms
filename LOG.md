@@ -22,6 +22,7 @@
 | 출처 | 문제 이름 | 해결 여부 | 바로가기 |
 | :---: | :---: | :---: | :---: |
 | Leetcode | 110  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/33) |
+| Leetcode | 67  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/32) |
 | Leetcode | 83  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/31) |
 | Programmers | 42586  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/30) |
 | Leetcode | 13  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/26) |
