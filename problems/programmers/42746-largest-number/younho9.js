@@ -1,14 +1,6 @@
 function solution(numbers) {
-    const result = numbers
-        .map((number) => number.toString())
-        .sort((a, b) => b.concat(a) - a.concat(b))
-        .join('');
-
-    if (result[0] === '0') {
-        return '0';
-    }
-
-    return result;
+    const result = numbers.sort((a, b) => `${b}${a}` - `${a}${b}`).join('');
+    return result[0] === '0' ? '0' : result;
 }
 
 module.exports = solution;
