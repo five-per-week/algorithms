@@ -16,6 +16,13 @@
 | Programmers | 42628  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/36) |
 | Programmers | 42627  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/35) |
 
+
+
+### <img src="https://avatars2.githubusercontent.com/u/16265376?v=4" height="17px" width="17px"> agrajak
+| 출처 | 문제 이름 | 해결 여부 | 바로가기 |
+| :---: | :---: | :---: | :---: |
+| Leetcode | 16  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/39) |
+
 <!-- Summary End -->
 
 ## 스터디 규칙
