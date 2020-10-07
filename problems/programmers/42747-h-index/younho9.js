@@ -1,16 +1,14 @@
 function solution(citations) {
-    citations.sort((a, b) => a - b);
-    let h = citations.length;
-
-    for (let i = 0; i < citations.length; i++) {
-        if (citations[i] >= h) {
-            return h;
-        } else {
-            h--;
-        }
-    }
-
-    return h;
+    return citations
+        .sort((a, b) => a - b)
+        .slice()
+        .reduce((h, cur, _, arr) => {
+            if (cur >= h) {
+                arr.splice(1);
+                return h;
+            }
+            return --h;
+        }, citations.length);
 }
 
 module.exports = solution;
