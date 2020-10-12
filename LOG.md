@@ -1,6 +1,13 @@
 
 ## 모든 정보 요약 ##
 
+### <img src="https://avatars1.githubusercontent.com/u/34447105?v=4" height="17px" width="17px"> jungcome7
+| 출처 | 문제 이름 | 해결 여부 | 바로가기 |
+| :---: | :---: | :---: | :---: |
+| Leetcode | 1  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/50) |
+
+
+
 ### <img src="https://avatars2.githubusercontent.com/u/16265376?v=4" height="17px" width="17px"> agrajak
 | 출처 | 문제 이름 | 해결 여부 | 바로가기 |
 | :---: | :---: | :---: | :---: |
@@ -15,7 +22,6 @@
 | Leetcode | 13  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/26) |
 | Leetcode | 198  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/23) |
 | Leetcode | 121  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/18) |
-| Programmers | 42579  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/15) |
 
 
 

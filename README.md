@@ -6,6 +6,12 @@
 ## 이번 주(42주차) 요약
 > 이 요약은 자동으로 생성됩니다.
 [이전 요약들](https://github.com/five-per-week/algorithms/blob/master/LOG.md)
+
+### <img src="https://avatars1.githubusercontent.com/u/34447105?v=4" height="17px" width="17px"> jungcome7
+| 출처 | 문제 이름 | 해결 여부 | 바로가기 |
+| :---: | :---: | :---: | :---: |
+| Leetcode | 1  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/50) |
+
 <!-- Summary End -->
 
 ## 스터디 규칙
