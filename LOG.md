@@ -4,6 +4,7 @@
 ### <img src="https://avatars2.githubusercontent.com/u/16265376?v=4" height="17px" width="17px"> agrajak
 | 출처 | 문제 이름 | 해결 여부 | 바로가기 |
 | :---: | :---: | :---: | :---: |
+| Leetcode | 703  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/47) |
 | Leetcode | 268  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/46) |
 | Leetcode | 16  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/39) |
 | Leetcode | 110  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/33) |
@@ -35,5 +36,4 @@
 | Programmers | 42583  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/28) |
 | Programmers | 42586  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/27) |
 | Programmers | 42584  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/24) |
-| Programmers | 42579  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/13) |
 
