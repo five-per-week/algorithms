@@ -6,6 +6,7 @@
 | :---: | :---: | :---: | :---: |
 | Programmers | 42862  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/45) |
 | Programmers | 42842  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/44) |
+| Programmers | 42839  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/43) |
 | Programmers | 42840  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/42) |
 | Programmers | 42747  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/41) |
 | Programmers | 42746  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/40) |
@@ -18,7 +19,6 @@
 | Programmers | 42586  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/27) |
 | Programmers | 42584  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/24) |
 | Programmers | 42579  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/13) |
-| Programmers | 42578  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/10) |
 
 
 

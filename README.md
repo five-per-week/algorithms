@@ -3,29 +3,9 @@
 > 👨‍💻 일주일에 최소 5개의 알고리즘 문제를 푸는 스터디
 
 <!-- Summary Start -->
-## 이번 주(41주차) 요약
+## 이번 주(42주차) 요약
 > 이 요약은 자동으로 생성됩니다.
 [이전 요약들](https://github.com/five-per-week/algorithms/blob/master/LOG.md)
-
-### <img src="https://avatars2.githubusercontent.com/u/48426991?v=4" height="17px" width="17px"> younho9
-| 출처 | 문제 이름 | 해결 여부 | 바로가기 |
-| :---: | :---: | :---: | :---: |
-| Programmers | 42862  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/45) |
-| Programmers | 42842  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/44) |
-| Programmers | 42840  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/42) |
-| Programmers | 42747  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/41) |
-| Programmers | 42746  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/40) |
-| Programmers | 42748  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/38) |
-| Programmers | 42628  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/36) |
-| Programmers | 42627  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/35) |
-
-
-
-### <img src="https://avatars2.githubusercontent.com/u/16265376?v=4" height="17px" width="17px"> agrajak
-| 출처 | 문제 이름 | 해결 여부 | 바로가기 |
-| :---: | :---: | :---: | :---: |
-| Leetcode | 16  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/39) |
-
 <!-- Summary End -->
 
 ## 스터디 규칙
