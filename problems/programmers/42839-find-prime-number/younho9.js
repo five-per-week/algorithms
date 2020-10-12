@@ -1,21 +1,14 @@
 function solution(numbers) {
-    let primeNumbers = new Set();
+    const primeNumbers = new Set();
 
     for (let i = 1; i <= numbers.length; i++) {
-        primeNumbers = new Set([
-            ...primeNumbers,
-            ...getPermutation(numbers.split(''), i).map(Number),
-        ]);
-    }
-
-    const max = Math.max(...primeNumbers);
-    primeNumbers.delete(0);
-    primeNumbers.delete(1);
-
-    for (let i = 2; i * i <= max; i++) {
-        for (let j = i * i; j <= max; j += i) {
-            primeNumbers.delete(j);
-        }
+        getPermutation(numbers.split(''), i)
+            .map(Number)
+            .forEach((number) => {
+                if (isPrime(number)) {
+                    primeNumbers.add(number);
+                }
+            });
     }
 
     return primeNumbers.size;
@@ -36,6 +29,15 @@ function getPermutation(arr, n) {
 
         return perms;
     }, []);
+}
+
+function isPrime(num) {
+    if (num < 2) return false;
+    if (num === 2) return true;
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) return false;
+    }
+    return true;
 }
 
 module.exports = solution;

@@ -21,14 +21,14 @@ describe('42839-find-prime-number', () => {
         const result = 5056;
         expect(solution(numbers)).toEqual(result);
     });
-    // it('9자리 수 테스트', () => {
-    //     const numbers = '123456789';
-    //     const result = 43089;
-    //     expect(solution(numbers)).toEqual(result);
-    // });
-    // it('10자리 수 테스트', () => {
-    //     const numbers = '1234567890';
-    //     const result = 283086;
-    //     expect(solution(numbers)).toEqual(result);
-    // });
+    it('9자리 수 테스트', () => {
+        const numbers = '123456789';
+        const result = 43089;
+        expect(solution(numbers)).toEqual(result);
+    });
+    it('10자리 수 테스트', () => {
+        const numbers = '1234567890';
+        const result = 283086;
+        expect(solution(numbers)).toEqual(result);
+    });
 });
