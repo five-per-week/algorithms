@@ -10,6 +10,7 @@
 ### <img src="https://avatars1.githubusercontent.com/u/34447105?v=4" height="17px" width="17px"> jungcome7
 | 출처 | 문제 이름 | 해결 여부 | 바로가기 |
 | :---: | :---: | :---: | :---: |
+| Leetcode | 104  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/51) |
 | Leetcode | 1  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/50) |
 
 <!-- Summary End -->
