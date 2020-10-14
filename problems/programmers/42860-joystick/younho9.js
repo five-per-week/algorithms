@@ -9,9 +9,13 @@ function solution(name) {
     let curPosition = 0;
     let move = 0;
 
-    while (positions.size) {
+    while (true) {
         move += findLeastAlphabetMove(name[curPosition]);
         positions.delete(curPosition);
+
+        if (!positions.size) {
+            break;
+        }
 
         let leastDistance = length;
         let nextPosition = curPosition;
@@ -29,9 +33,7 @@ function solution(name) {
         });
 
         curPosition = nextPosition;
-        if (positions.size) {
-            move += leastDistance;
-        }
+        move += leastDistance;
     }
 
     return move;
