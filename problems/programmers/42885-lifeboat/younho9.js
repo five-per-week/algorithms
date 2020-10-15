@@ -4,12 +4,13 @@ function solution(people, limit) {
     people
         .sort((a, b) => b - a)
         .forEach((heavyPerson) => {
-            const remaining = limit - heavyPerson;
-            boats.push(remaining);
+            let remaining = limit - heavyPerson;
 
             if (people[people.length - 1] <= remaining) {
-                people.pop();
+                remaining -= people.pop();
             }
+
+            boats.push(remaining);
         });
 
     return boats.length;
