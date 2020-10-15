@@ -7,6 +7,13 @@
 > 이 요약은 자동으로 생성됩니다.
 [이전 요약들](https://github.com/five-per-week/algorithms/blob/master/LOG.md)
 
+### <img src="https://avatars2.githubusercontent.com/u/48426991?v=4" height="17px" width="17px"> younho9
+| 출처 | 문제 이름 | 해결 여부 | 바로가기 |
+| :---: | :---: | :---: | :---: |
+| Programmers | 42860  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/53) |
+
+
+
 ### <img src="https://avatars1.githubusercontent.com/u/34447105?v=4" height="17px" width="17px"> jungcome7
 | 출처 | 문제 이름 | 해결 여부 | 바로가기 |
 | :---: | :---: | :---: | :---: |
