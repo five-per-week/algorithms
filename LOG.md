@@ -1,18 +1,10 @@
 
 ## 모든 정보 요약 ##
 
-### <img src="https://avatars1.githubusercontent.com/u/34447105?v=4" height="17px" width="17px"> jungcome7
-| 출처 | 문제 이름 | 해결 여부 | 바로가기 |
-| :---: | :---: | :---: | :---: |
-| hackerrank | encryption  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/54) |
-| Leetcode | 104  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/51) |
-| Leetcode | 1  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/50) |
-
-
-
 ### <img src="https://avatars2.githubusercontent.com/u/48426991?v=4" height="17px" width="17px"> younho9
 | 출처 | 문제 이름 | 해결 여부 | 바로가기 |
 | :---: | :---: | :---: | :---: |
+| Programmers | 42885  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/55) |
 | Programmers | 42860  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/53) |
 | Programmers | 42862  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/45) |
 | Programmers | 42842  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/44) |
@@ -31,6 +23,15 @@
 
 
 
+### <img src="https://avatars1.githubusercontent.com/u/34447105?v=4" height="17px" width="17px"> jungcome7
+| 출처 | 문제 이름 | 해결 여부 | 바로가기 |
+| :---: | :---: | :---: | :---: |
+| hackerrank | encryption  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/54) |
+| Leetcode | 104  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/51) |
+| Leetcode | 1  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/50) |
+
+
+
 ### <img src="https://avatars2.githubusercontent.com/u/16265376?v=4" height="17px" width="17px"> agrajak
 | 출처 | 문제 이름 | 해결 여부 | 바로가기 |
 | :---: | :---: | :---: | :---: |
@@ -44,5 +45,4 @@
 | Leetcode | 83  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/31) |
 | Programmers | 42586  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/30) |
 | Leetcode | 13  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/26) |
-| Leetcode | 198  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/23) |
 
