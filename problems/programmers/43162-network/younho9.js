@@ -14,15 +14,15 @@ function solution(n, computers) {
     return networks.length;
 }
 
-function visit(i, computers, visited) {
-    visited.add(i);
+function visit(i, computers, connected) {
+    connected.add(i);
     computers[i].forEach((_, j) => {
-        if (!visited.has(j) && computers[i][j]) {
-            visit(j, computers, visited);
+        if (!connected.has(j) && computers[i][j]) {
+            visit(j, computers, connected);
         }
     });
 
-    return visited;
+    return connected;
 }
 
 module.exports = solution;
