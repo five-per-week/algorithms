@@ -1,17 +1,18 @@
 function solution(numbers, target) {
-    return bfs(numbers, target);
+    return dfs(numbers, target);
 }
 
-function bfs(numbers, target) {
-    const clone = [...numbers];
-
-    if (clone.length === 1) {
-        return Number(clone[0] === target || clone[0] === -target);
+function dfs(numbers, target) {
+    if (!numbers.length) {
+        return target === 0 ? 1 : 0;
     }
 
-    const lastNumber = clone.pop();
+    const lastNumber = numbers.pop();
 
-    return bfs(clone, target - lastNumber) + bfs(clone, target + lastNumber);
+    return (
+        dfs([...numbers], target - lastNumber) +
+        dfs([...numbers], target + lastNumber)
+    );
 }
 
 module.exports = solution;
