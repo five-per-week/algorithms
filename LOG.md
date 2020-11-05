@@ -4,6 +4,7 @@
 ### <img src="https://avatars2.githubusercontent.com/u/48426991?v=4" height="17px" width="17px"> younho9
 | 출처 | 문제 이름 | 해결 여부 | 바로가기 |
 | :---: | :---: | :---: | :---: |
+| Programmers | 43162  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/57) |
 | Programmers | 43165  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/56) |
 | Programmers | 42885  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/55) |
 | Programmers | 42860  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/53) |
@@ -44,5 +45,4 @@
 | Leetcode | 67  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/32) |
 | Leetcode | 83  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/31) |
 | Programmers | 42586  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/30) |
-| Leetcode | 13  | ✅ | [바로가기](https://github.com/five-per-week/algorithms/pull/26) |
 
